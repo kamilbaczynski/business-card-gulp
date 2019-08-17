@@ -1,40 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
+<html lang="pl">
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Kamil Baczyński Wizytówka</title>
+  <meta name="description" content="Description" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+<body>
+  <main class="card">
+    <article class="person">
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+      <!-- <div class="person__photo--container"> </div>-->
+      <img class="person__photo" src="img/avatar.jpg" alt="uśmiechnięta twarz Kamila Baczyńskiego">
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+      <div class="person__informations--container">
+        <header class="person__header">
+          <h1 class="person__name">
+            Kamil Baczyński
+          </h1>
+          <p class="person__title">
+            junior frontend developer
+          </p>
+        </header>
+        <p class="person__description person__description--bottom">
+          28-letni włóczykij próbujący stawiać swoje pierwsze kroki w branży IT.
+          <span class="person__special">Muzyk amator</span>,
+          <span class="person__special">klarnecista</span> i
+          <span class="person__special">surfer</span>.
+          Niespokojna dusza, która pragnie czasem za wiele... Obecnie karmi fjordy z ręki, lecz tęskni ponad
+          wszystko za rodzinnym Podlasiem. <a class="person__link--cow" href="extrapage.html">KLIK</a>
+        </p>
 
-    <script src="js/main.js"></script>
-  </body>
+        <p class="person__description">
+          W sieci: <a class="person__link--social" href="#">Facebook</a>,
+          <a class="person__link--social" href="https://github.com/kamilbaczynski">GitHub</a>, <a
+            class="person__link--social" href="#">Instagram</a>.
+        </p>
+      </div>
+
+
+    </article>
+  </main>
+</body>
+
 </html>
